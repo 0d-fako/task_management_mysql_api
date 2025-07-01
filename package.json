@@ -16,5 +16,12 @@
     "url": "https://github.com/0d-fako/task_management_mysql_api/issues"
   },
   "homepage": "https://github.com/0d-fako/task_management_mysql_api#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.7"
+  }
 }
