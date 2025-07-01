@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true,
       validate: {
         isEmail: true
       }
@@ -18,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-
     role: {
       type: DataTypes.ENUM('user', 'admin'),
       defaultValue: 'user'
@@ -30,6 +30,13 @@ module.exports = (sequelize, DataTypes) => {
     createdAt: 'createdAt'
   });
 
+  User.associate = (models) => {
+    User.hasMany(models.Task, {
+      foreignKey: 'userId',
+      as: 'tasks',
+      onDelete: 'CASCADE'
+    });
+  };
+
   return User;
 };
-    
