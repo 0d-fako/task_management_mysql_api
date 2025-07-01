@@ -22,7 +22,7 @@ A robust RESTful API for managing personal tasks, built with Node.js, Express, S
 - dotenv for environment config
 
 ## 📂 Project Structure
-
+```
 .
 ├── api-docs/
 ├── config/
@@ -37,7 +37,7 @@ A robust RESTful API for managing personal tasks, built with Node.js, Express, S
 ├── package.json
 ├── .gitignore
 └── .env
-
+```
 ## 🔧 Getting Started
 
 ### 1. Clone the repository
