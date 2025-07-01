@@ -1,5 +1,9 @@
 const express = require('express');
 require('dotenv').config();
+
+const swaggerUi = require("swagger-ui-express")
+const swaggerDocument = require("./api-docs/swagger.json")
+
 const sequelize = require('./config/database');
 const userRoutes = require('./routes/userRoutes');
 const taskRoutes = require('./routes/taskRoutes');
@@ -11,6 +15,8 @@ const Task = require('./models/Task');
 // Initialize express
 const app = express();
 app.use(express.json());
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 // Register routes
 const userController = require('./controllers/userController');
