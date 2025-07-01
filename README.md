@@ -43,6 +43,7 @@ A robust RESTful API for managing personal tasks, built with Node.js, Express, S
 ### 1. Clone the repository
 
 git clone https://github.com/0d-fako/task_management_mysql_api
+
 cd task_management_mysql_api
 
 ### 2. Install dependencies
