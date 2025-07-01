@@ -24,6 +24,7 @@ A robust RESTful API for managing personal tasks, built with Node.js, Express, S
 ## 📂 Project Structure
 
 .
+├── api-docs/
 ├── config/
 ├── controllers/
 ├── middlewares/
@@ -32,8 +33,9 @@ A robust RESTful API for managing personal tasks, built with Node.js, Express, S
 ├── routes/
 ├── services/
 ├── utils/
-├── swagger.js
 ├── server.js
+├── package.json
+├── .gitignore
 └── .env
 
 ## 🔧 Getting Started
